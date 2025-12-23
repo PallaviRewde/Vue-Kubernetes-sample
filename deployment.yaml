@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vue-k8s-app
+spec:
+  replicas: 3 
+  selector:
+    matchLabels:
+      app: vue-k8s-app
+  template:
+    metadata:
+      labels:
+        app: vue-k8s-app
+    spec:
+      containers:
+        - name: vue-k8s-app
+          image: ibpallavi/vue-k8s-app:v2 
+          ports:
+          - containerPort: 80

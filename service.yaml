@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vue-k8s-service
+spec:
+  selector:
+    app: vue-k8s-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer  # This makes it accessible externally (e.g., Minikube will use a proxy)
