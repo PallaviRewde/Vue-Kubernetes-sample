@@ -1,3 +1,13 @@
+# Prerequisites: Install Minikube and kubectl
+
+Before starting, ensure you have the following tools installed:
+
+1. **kubectl** (Kubernetes CLI):
+	 - [Install instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+	
+2. **Minikube** (Local Kubernetes):
+	 - [Install instructions](https://minikube.sigs.k8s.io/docs/start/)
+	
 # Complete Setup & Deployment Steps
 
 1. **Clone the repository:**
