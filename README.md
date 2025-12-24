@@ -63,6 +63,6 @@
 	 This will open your app in the browser.
 
      Or, get the service URL:
-        ```bash
-        kubectl get service
-        ```
+     ```bash
+     kubectl get service
+     ```
