@@ -18,12 +18,19 @@
 	npm run build
 	```
 
-5. **Build the Docker image (replace `<your-dockerhub-username>` and `<tag>`):**
+5. **Log in to Docker Hub (if not logged in) and Build the Docker image (replace `<your-dockerhub-username>` and `<tag>`):**
+
+    ```bash
+	docker login
+	```
+	Enter your Docker Hub username and password when prompted.
+
 	```bash
 	docker build -t <your-dockerhub-username>/vue-k8s-app:<tag> .
 	```
 
-6. **Push the Docker image to Docker Hub:**
+6.  **Push the Docker image to Docker Hub:**
+	
 	```bash
 	docker push <your-dockerhub-username>/vue-k8s-app:<tag>
 	```
@@ -58,3 +65,4 @@
      Or, get the service URL:
         ```bash
         kubectl get service
+        ```
